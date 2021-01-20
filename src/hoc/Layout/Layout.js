@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 
-import Auxiliary from '../../hoc/Auxiliary';
+import Auxiliary from '../Auxiliary';
 import classes from './Layout.module.css';
+import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
+import Sidedrawer from "../../components/Navigation/SideDrawer/Sidedrawer";
 
 class Layout extends Component {
     state = {
@@ -21,6 +23,10 @@ class Layout extends Component {
     render () {
         return (
             <Auxiliary>
+                <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} />
+                <Sidedrawer
+                    open={this.state.showSideDrawer}
+                    closed={this.sideDrawerClosedHandler} />
                 <main className={classes.Content}>
                     {this.props.children}
                 </main>
