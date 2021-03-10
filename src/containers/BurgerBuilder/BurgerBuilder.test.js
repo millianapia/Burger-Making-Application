@@ -14,7 +14,7 @@ describe("<BurgerBuilder/>", () => {
         wrapper = shallow(<BurgerBuilder onInitIngredients={() =>{}}/>)
     })
 
-    it("Should render buildcontrols when recieving ingredients ", () =>{
+    it("Should render buildcontrols when recieving ingredients", () =>{
         wrapper.setProps({ings: {salad: 0}})
         expect(wrapper.find(BuildControls)).toHaveLength(1)
     })
