@@ -1,9 +1,7 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
-/.pnp
-.pnp.js
 
 # testing
 /coverage
@@ -21,18 +19,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+src/axios-orders.js
 config/env.js
-config/getHttpsConfig.js
 config/jest/cssTransform.js
 config/jest/fileTransform.js
-config/modules.js
 config/paths.js
-config/pnpTs.js
-config/webpack.config.js
 config/webpackDevServer.config.js
-package-lock.json
-package.json
 scripts/build.js
 scripts/start.js
 scripts/test.js
-src/axios-orders.js
